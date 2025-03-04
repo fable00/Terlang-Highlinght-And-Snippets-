@@ -2,7 +2,7 @@
   "name": "terlang",
   "displayName": "Terlang",
   "description": "Terlang snippets and highlighting",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "SaymonMacedo",
   "engines": {
     "vscode": "^1.97.0"
