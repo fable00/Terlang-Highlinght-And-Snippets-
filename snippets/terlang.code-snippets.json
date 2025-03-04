@@ -1,0 +1,77 @@
+{
+  "Print function": {
+    "prefix": "out",
+    "body": ["out('$1')"],
+    "description": "Show a text"
+  },
+
+  "Print function with broke line": {
+    "prefix": "output",
+    "body": ["output('$1')"],
+    "description": "Show text with a broke line in the end"
+  },
+
+  "Set a variable": {
+    "prefix": ["auto", "let", "var"],
+    "body": ["auto $1 = ;"],
+    "description": "Set a basic terlang variable"
+  },
+
+  "Set a while loop": {
+    "prefix": "while",
+    "body": ["while(i < $1)\n{\n\n}"],
+    "description": "Set a basic while loop"
+  },
+
+  "Set a for loop": {
+    "prefix": "for",
+    "body": ["for(auto i = 0; i < $1; ++i)\n{\n\n}"],
+    "description": "Set a basic for loop"
+  },
+
+  "Set an array or list": {
+    "prefix": ["array", "list"],
+    "body": ["auto list = {};"],
+    "description": "Set a basic array or list"
+  },
+
+  "Set a function": {
+    "prefix": ["set", "func"],
+    "body": ["set $1(value)\n{\n  return value;\n}"],
+    "description": "Set a basic terlang function"
+  },
+
+  "Set a class": {
+    "prefix": ["class"],
+    "body": ["class $1()\n{\n  method(){}\n}\n$1.method();"],
+    "description": "Set a basic terlang class"
+  },
+
+  "Rand function": {
+    "prefix": ["rand"],
+    "body": ["rand(minNum, maxNum)"],
+    "description": "Set a basic terlang random number function"
+  },
+
+  "Clock function": {
+    "prefix": ["clock", "date"],
+    "body": ["clock()"],
+    "description": "Set a basic terlang date function"
+  },
+
+  "Exec function": {
+    "prefix": ["exec"],
+    "body": ["exec('$1')"],
+    "description": "Set a basic terlang shell commands execution function"
+  },
+  "Include function":{
+    "prefix": ["include"],
+    "body": ["include('$1')"],
+    "description": "Set the terlang include flag"
+  },
+  "Version function": {
+    "prefix": ["version", "args"],
+    "body": ["output('args()');"],
+    "description": "Show actual terlang version"
+  }
+}

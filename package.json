@@ -1,0 +1,44 @@
+{
+  "name": "terlang",
+  "displayName": "Terlang",
+  "description": "Terlang snippets and highlighting",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "icon": "icon.png",
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "terlang",
+        "aliases": [
+          "Terlang"
+        ],
+        "extensions": [
+          ".ter"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "terlang",
+        "scopeName": "source.terlang",
+        "path": "./syntaxes/terlang.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "terlang",
+        "path": "./snippets/terlang.code-snippets.json"
+      }
+    ]
+  },
+  "repository": {
+    "Language Repository": "https://github.com/terroo/terlang",
+    "Extension Repository": "https://github.com/fable00/Terlang-Highlinght-And-Snippets-"
+  }
+}
