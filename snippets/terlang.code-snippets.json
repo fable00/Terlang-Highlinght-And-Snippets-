@@ -1,13 +1,13 @@
 {
   "Print function": {
     "prefix": "out",
-    "body": ["out('$1')"],
+    "body": ["out(\"$1\")"],
     "description": "Show a text"
   },
 
   "Print function with broke line": {
     "prefix": "output",
-    "body": ["output('$1')"],
+    "body": ["output(\"$1\")"],
     "description": "Show text with a broke line in the end"
   },
 
@@ -43,7 +43,7 @@
 
   "Set a class": {
     "prefix": ["class"],
-    "body": ["class $1()\n{\n  method(){}\n}\n$1.method();"],
+    "body": ["class $1\n{\n  method(){}\n}\n$1().method();"],
     "description": "Set a basic terlang class"
   },
 
@@ -61,17 +61,19 @@
 
   "Exec function": {
     "prefix": ["exec"],
-    "body": ["exec('$1')"],
+    "body": ["exec(\"$1\")"],
     "description": "Set a basic terlang shell commands execution function"
   },
-  "Include function":{
+  
+  "Include function": {
     "prefix": ["include"],
-    "body": ["include('$1')"],
+    "body": ["include(\"$1\")"],
     "description": "Set the terlang include flag"
   },
+
   "Version function": {
     "prefix": ["version", "args"],
-    "body": ["output('args()');"],
+    "body": ["output(args());"],
     "description": "Show actual terlang version"
   }
 }
